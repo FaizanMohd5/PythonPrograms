@@ -94,4 +94,3 @@ ans)
 
 n=int(input("Enter a number: "))
 print("Unit digit of ",n," is ",int(n%10))
-
