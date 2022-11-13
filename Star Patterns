@@ -1,0 +1,80 @@
+Pattern 1:
+
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+
+Code:
+n=int(input("Enter number of rows:"))
+for i in range(n+1):
+    for j in range(i):
+        print("*",end=" ")
+    print("\n")
+    
+Pattern 2:
+
+        *
+      * *
+    * * *
+  * * * *
+* * * * *
+
+Code:
+
+Pattern 3:
+
+* * * * *
+* * * *
+* * *
+* *
+*
+
+Code:
+
+Pattern 4:
+
+* * * * *
+  * * * *
+    * * *
+      * *
+        *
+        
+Code:
+
+Pattern 5:
+
+        *
+      * * *
+    * * * * *
+  * * * * * * *
+* * * * * * * * *
+
+Code:
+
+Pattern 6:
+
+* * * * * * * * *
+  * * * * * * *
+    * * * * *
+      * * *
+        *
+        
+Code:
+
+Pattern 7:
+
+* * * * * * * * *
+* * * *   * * * *
+* * *       * * *
+* *           * *
+*               *
+
+Code:
+
+Pattern 8:
+
+
+   
+  
