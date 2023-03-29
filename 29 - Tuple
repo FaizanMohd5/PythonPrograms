@@ -1,0 +1,31 @@
+1) WAP to create a tuple from a given list.
+Code:
+
+l1=[10,43,65,90,32,77]
+t1=tuple(l1)
+print(t1)
+
+2) WAP to reverse a tuple
+Code:
+t2=(2,3,4,6,1,8)
+t2=reversed(t2)
+print(tuple(t2))
+
+3) WAP to create list of tuples from a given list of strings, where
+each tuple is a collection of strings begin with the same character.
+Code:
+
+
+4) WAP to create list of tuples, where each tuple is a pair of 
+elements, first element is uppercase character and second element
+is it's unicode
+Code:
+
+5) WAP to find the sum of all odd numbers stored in a tuple.
+Code:
+sum=0
+print("Enter elements seperated by space:\n")
+t5=tuple([int(i) for i in input().split(" ")])
+for i in t5:    
+    sum = sum + (i if i%2!=0 else 0)
+print(sum)
