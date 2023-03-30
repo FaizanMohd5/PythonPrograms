@@ -21,6 +21,24 @@ elements, first element is uppercase character and second element
 is it's unicode
 Code:
 
+characters="abcdefghijklmnopqrstuvwxyz".upper()
+tlist=[]
+charlist=[]
+for i in characters:
+    tlist.clear()
+    tlist.append(i)
+    tlist.append(ord(i))
+    charlist.append(tuple(tlist))
+print(charlist)
+
+OR 
+
+charlist=[]
+for i in range(65,91):
+    charlist.append((chr(i),i))
+print(charlist)
+
+
 5) WAP to find the sum of all odd numbers stored in a tuple.
 Code:
 sum=0
