@@ -1,0 +1,59 @@
+1) WAP to print Python on the screen.
+
+Code:
+
+print("Python")
+
+2) WAP to print Python on the first line and Version 3 on the second line.
+
+Code:
+
+print("Python\nVersion 3")
+
+3) WAP to print "Python" on the screen (Remember to print double quotes)
+
+Code: 
+
+print("\"Python\"")
+
+4) WAP to print "Teacher's Day" on the screen. (Remember to print double quotes and single quote)
+
+Code:
+
+print("\"Teacher's Day\"")
+
+5) WAP to print \n on the screen.
+
+Code:
+
+print("\\n")
+
+6) WAP containing a variable with some integer value, print value of this variable.
+
+Code:
+
+x=5
+print(x)
+
+7) WAP to print the value of a variable. Variable contains your name as data.
+
+Code:
+
+n="Faizan"
+print(n)
+
+8) WAP to print 
+a,b,c=1,2,3
+print(a,b,c,sep="\n")
+
+#four
+a,b,c,d,e=2,2.2,True,"5xn",4+3j
+print(a,type(a))
+print(b,type(b))
+print(c,type(c))
+print(d,type(d))
+print(e,type(e))
+
+#five
+d,m,y=23,2,2023
+print(d,m,y,sep='/')
