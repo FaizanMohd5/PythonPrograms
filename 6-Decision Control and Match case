@@ -1,0 +1,187 @@
+1) WAP to check whether a given number is positive or non-positive.
+
+Code :
+
+n=-7
+print("positive") if n>0 else print("Non-positive")
+
+2) WAP to check whether a given number is divisible by 5 or not.
+
+Code:
+
+n=9
+print("Divisible by 5" if n%5==0 else "Not divisible by 5")
+
+3) WAP to check whether a given number is even or odd.
+
+Code:
+
+n=9
+print("Even") if n%2==0 else print("Odd")
+
+4) WAP to orint greater between two numbers. Print numbers only once, 
+even if the numbers are the same.
+
+Code:
+
+a,b=5,5
+print(a) if a>b else print(b)
+
+5) WAP to print two given words in dictionary order.
+
+Code:
+
+w1="faizan"
+w2="zeeshan"
+if w1<w2:
+    print(w1,w2,sep='\n')
+else:
+    print(w2,w1,end='\n')
+
+6) WAP to check whether a given number is a three digit number or not.
+
+Code:
+
+n=int(input("Enter a number:"))
+if 999>=n>=100:
+    print("Three digit num")
+else:
+    print("Not a three dig num")
+
+7) WAP to check whether a given number is positive, negative or zero.
+
+Code:
+
+n=0
+print("Positive" if n>0 else "Negative" if n<0 else "Zero")
+
+8) WAP to check whether a given quadratic equation has two real & distinct roots,
+real & equal roots or imaginary roots.
+
+Code:
+
+a=1
+b=-9
+c=10
+d=b**2-(4*a*c)
+print("Real & Distinct" if d>0 else "Real & Equal" if d==0 else "imaginary roots")
+
+9) WAP to check whether a given year is a leap year or not.
+
+Code:
+
+year=2001
+if year%400==0:
+    print("leap year")
+elif year%100==0:
+    print("leap year")
+elif year%4==0:
+    print("leap year")
+else:
+    print("not leap year")
+
+10) WAP to print greater among three numbers. Print number only once even if numbers are the same.
+
+Code:
+
+a,b,c=13,4,23
+if a>b:
+    print(a if a>c else c)
+else:
+    print(b if b>c else c)
+    
+11) WAP to check whether a given number is a three digit number or not.
+
+Code:
+
+n=123
+match 100<=n<=999:
+    case True:
+        print("Three digit number")
+    case False:
+        print("Not a three digit number")
+
+12) WAP to check whether a given number is positive, negative or zero.
+
+Code:
+
+n=-8
+match n>0:
+    case True: 
+        print("Positive")
+    case False:
+        match n<0:
+            case True:
+                print("Negative")
+            case False:
+                print("Zero")
+
+13) WAP to make a menu criven program in which user has to choose one of the option from four given options 
+        1) Odd-Even
+        2) positive - non positive
+        3) simple interest
+        4) roots of quadratic equation.
+        
+  Match and execute appropriate code on user selection.
+  
+Code:
+
+choice=int(input("[1]Odd-Even\n[2]Positive - Non Positive\n[3]Simple Interest\n[4]Quadratic equation\nEnter your choice:"))
+match choice:
+    case 1:
+        n=int(input("Even-Odd\nEnter a number:"))
+        print("Even" if n%2==0 else "odd")
+    case 2:
+        n=int(input("Positive - Non positive\nEnter a number:"))
+        print("Positive" if n>0 else "Non-positive")
+    case 3:
+        print("Simple Interest")
+        p,t,r=float(input("Principle amount:")),int(input("Duration:")),float(input("Rate of interest:"))
+        si=float((p*t*r)/100)
+        print("Simple Interest: ",si)
+    case 4:
+        a,b,c=int(input("Roots of Quadratic equation\na=")),int(input("b=")),int(input("c="))
+        d=b**2-4*a*c
+        match d>0:
+            case True: 
+                print("Real & distinct\nroots are:",(-b+(d)**0.5)/2*a,(-b-(d)**0.5)/2*a)
+            case False:
+                match d==0:
+                    case True:
+                        print("Real & same\nroots are:",-b/(2*a),-b/(2*a))
+                    case _:
+                        print("Imaginary roots\nroots are: ",a,"+i",b," ",a,"-i",b,sep="")
+    case _:
+        print("Enter a valid choice.")
+        
+14) WAP to take one data from user and evaluate the type of data. If the data is of int type then print Monday,
+if data is of float then print Tuesday, if complex then print Wednesday, if the data is of bool then print Thursday.
+
+Code:
+
+data=eval(input("Enter something:"))
+match data:
+    case x if type(x)==int:
+        print("Monday")
+    case x if type(x)==float:
+        print("Tuesday")
+    case x if type(x)==complex:
+        print("Wednesday")
+    case x if type(x)==bool:
+        print("Thursday")
+
+15) WAP to take a string from the user. If the string is a part of "mysirg" then print "One", if the string is a 
+part of "education" then print "Two" and if the string is a part of "services" then print "Three".
+
+Code:
+
+s=input("Enter a string:")
+match s:
+    case s if s in "mysirg":
+        print("One")
+    case s if s in "education":
+        print("Two")
+    case s if s in "services":
+        print("Three")
+        
+    
