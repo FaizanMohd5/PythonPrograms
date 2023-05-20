@@ -1,0 +1,71 @@
+1) WAP to convert a number into str type
+Code:
+
+x=56
+print(type(x))
+x=str(x)
+print(type(x))
+
+2) WAP to print Unicode of the character 'm'
+
+Code: 
+
+print(ord('m'))
+
+3) WAP to print charater representation of a given unicode 100.
+
+Code:
+
+print(chr(100))
+
+4) WAP to convert a str type data into an int type. Also describe when a str type value
+is not possible to convert into an int type.
+
+Code:
+
+y="789"
+print(type(y))
+y=int(y)
+print(type(y))
+
+5) How to convert an integer value into a bool value?
+
+Ans:
+      Using bool() we can convert integer into bool value.
+      
+6) WAP to print any number and it's binary equivalent.
+
+Code:
+
+a=15
+a=bin(a)
+print(a,type(a))
+
+7) WAP to store binary number 1100101 in a variable and print it in decimal format.
+
+Code:
+
+b=0b1100101
+print(b)
+
+8) WAP to store a hexadecimal number 2F in a variable and print it in octal format.
+
+Code:
+
+h=0x2F
+print(oct(h))
+
+9) WAP to store an octal number 125 in a variable and print it in binary format.
+
+Code:
+
+o=0o125
+print(bin(o))
+
+10) WAP to add two numbers 25(in octal) and 39 (in hexa) and display the result in binary format.
+
+Code:
+
+oc,he=0o25,0x39
+sum=oc+he
+print(bin(sum))
