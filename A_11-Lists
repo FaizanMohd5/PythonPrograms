@@ -1,0 +1,104 @@
+1) WAP to calculete sum of elements of a list.
+
+l1=[int(i) for i in input("Enter the elements of list seperated by comma:\n").split(',')]
+print("Sum of elements of list: ",sum(l1))
+
+2) WAP to calculate average of elements of a list.
+
+l2=[int(i) for i in input("Enter the elements of list seperated by comma:\n").split(',')]
+print("Average of all the elements oflist: ",sum(l2)/len(l2))
+
+3) WAP to create a list of squares of numbers of a given list.
+
+print([int(i)**2 for i in input("Enter the elements seperated by comma:\n").split(',')])
+
+4) WAP to sort list elements in descending order.
+
+l4=[int(i) for i in input("Enter numbers seperated by comma:\n").split(',')]
+l4.sort(reverse=True)
+print(l4)
+
+5) WAP to create a list from a given list by selecting only even places elements.
+
+l5=[int(e) for e in input("Enter elements seperated by comma:").split(',')]
+i=1
+le=[]
+for e in l5:
+    if i%2==0:
+        le.append(e)
+    i+=1
+print(le)
+
+6) WAP to create a list of first N even natural numbers.
+
+n=int(input("Enter size of list:"))
+print("Enter ",n," elements:")
+le=[]
+for i in range(n):
+    le.append(int(input()))
+le=[i for i in le if i%2==0]
+print(le)
+
+#Better
+
+le=list(range(2,2*int(input("Enter a range:"))+1,2))
+print(le)
+
+
+7) WAP to create a list of first N terms of a Fibonacci series.
+
+n=int(input("Enter range:"))
+lf=[]
+a,b=0,1
+for i in range(0,n):
+    lf.append(a)
+    c=a+b
+    a=b
+    b=c
+print(lf)
+
+8) WAP to create a list of first N prime numbers
+
+n=int(input("Enter the range:"))
+lp=[]
+i=2
+while len(lp)!=n:
+    flag=0
+    for j in range(2,(i//2)+1):
+        if i%j==0:
+            break
+    else:
+        lp.append(i)
+    i+=1
+print(lp)
+
+9) WAP to add two matrices each of order 3 x 3. Store matrix elements in a list of lists.
+
+print("Enter 9 elements of 1st matrix sep by comma (row wise):")
+A=[
+    [int(s) for s in input().split(',')],
+    [int(s) for s in input().split(',')],
+    [int(s) for s in input().split(',')]
+]
+print("Enter 9 elements of 2nd matrix sep by comma (row wise):")
+B=[
+    [int(s) for s in input().split(',')],
+    [int(s) for s in input().split(',')],
+    [int(s) for s in input().split(',')]
+]
+print()
+C=[[0,0,0],[0,0,0],[0,0,0]]
+for i in range(0,3):
+    for j in range(0,3):
+        C[i][j]=A[i][j]+B[i][j]
+        print(C[i][j],end=' ')
+    print()
+
+10) WAP to create two lists from a given list of numbers in such a way that the first list can have only 
+positive numbers and second list can have only non positive numbers.
+
+numbers=[1,3,0,-5,3,-6,3,-9,-1,10,6]
+l1,l2=[],[]
+for i in numbers:
+    l1.append(i) if i>0 else l2.append(i)
+print("Positives: ",l1,"\nNon-positives: ",l2)
