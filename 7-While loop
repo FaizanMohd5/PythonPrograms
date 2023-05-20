@@ -1,0 +1,99 @@
+# USE USER INPUT ON SAME 10 PROGRAMS. 
+
+1) WAP to print MySirG 5 times on the screen.
+
+Code:
+
+i=5
+while i>0:
+    print("mySirG")
+    i-=1
+
+2) WAP to print first 10 natural numbers.
+
+Code:
+
+i=1
+while i<11:
+    print(i,end=" ")
+    i+=1
+print("\n")
+
+3) WAP to print first 10 narutal numbers in reverse order.
+
+Code:
+
+i=10
+while i>0:
+    print(i,end=" ")
+    i-=1
+print("\n")
+
+4) WAP to print first 10 odd natural numbers.
+
+Code:
+
+i=1
+while i<20:
+    print(i)
+    i=i+2
+print("\n")
+
+5) WAP to print first 10 odd natural numbers in reverse order.
+
+Code:
+
+i=19
+while i>0:
+    print(i)
+    i=i-2
+    
+6) WAP to print first 10 even natural numbers .
+
+Code:
+
+i=2
+while i<=20:
+    print(i,end=" ")
+    i+=2
+print("\n\n")
+
+7) WAP to print first 10 even natural numbers in reverse order.
+
+Code:
+
+i=20
+while i>=2:
+    print(i,end=" ")
+    i-=2
+print("\n\n")
+
+8) WAP to print squares of first 10 natural numbers.
+
+Code:
+
+i=1
+while i<=10:
+    print(i**2,end=" ")
+    i+=1
+print("\n\n")
+
+9) WAP print cubes of first 10 natural numbers.
+
+Code:
+
+i=1
+while i<=10:
+    print(i**3,end=" ")
+    i+=1
+print("\n\n")
+
+10) WAP to print first 10 multiples of 5.
+
+Code:
+
+i=1
+while i<=10:
+    print(5*i,end=" ")
+    i+=1
+
