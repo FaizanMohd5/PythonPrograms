@@ -42,11 +42,19 @@ Code:
 n="Faizan"
 print(n)
 
-8) WAP to print 
+8) WAP to print values of three variables, each in a new line. All three variables are filled
+with some integer values.
+
+Code:
+
 a,b,c=1,2,3
 print(a,b,c,sep="\n")
 
-#four
+9) Create 5 variables each of them containing different types of data. WAP to print values
+of all the variables along with their data types.
+
+Code:
+
 a,b,c,d,e=2,2.2,True,"5xn",4+3j
 print(a,type(a))
 print(b,type(b))
@@ -54,6 +62,11 @@ print(c,type(c))
 print(d,type(d))
 print(e,type(e))
 
-#five
+10) Create three variables and assign current date to them, first variable contains day
+number, second variable contains month number and third variable contains year number. 
+WAP to display date in standard way (e.g. 29/11/2022)
+
+Code:
+
 d,m,y=23,2,2023
 print(d,m,y,sep='/')
