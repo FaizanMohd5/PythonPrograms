@@ -1,0 +1,92 @@
+1) WAP to check whether a given number is positive or non-positive.
+
+Code :
+
+n=-7
+print("positive") if n>0 else print("Non-positive")
+
+2) WAP to check whether a given number is divisible by 5 or not.
+
+Code:
+
+n=9
+print("Divisible by 5" if n%5==0 else "Not divisible by 5")
+
+3) WAP to check whether a given number is even or odd.
+
+Code:
+
+n=9
+print("Even") if n%2==0 else print("Odd")
+
+4) WAP to orint greater between two numbers. Print numbers only once, 
+even if the numbers are the same.
+
+Code:
+
+a,b=5,5
+print(a) if a>b else print(b)
+
+5) WAP to print two given words in dictionary order.
+
+Code:
+
+w1="faizan"
+w2="zeeshan"
+if w1<w2:
+    print(w1,w2,sep='\n')
+else:
+    print(w2,w1,end='\n')
+
+6) WAP to check whether a given number is a three digit number or not.
+
+Code:
+
+n=int(input("Enter a number:"))
+if 999>=n>=100:
+    print("Three digit num")
+else:
+    print("Not a three dig num")
+
+7) WAP to check whether a given number is positive, negative or zero.
+
+Code:
+
+n=0
+print("Positive" if n>0 else "Negative" if n<0 else "Zero")
+
+8) WAP to check whether a given quadratic equation has two real & distinct roots,
+real & equal roots or imaginary roots.
+
+Code:
+
+a=1
+b=-9
+c=10
+d=b**2-(4*a*c)
+print("Real & Distinct" if d>0 else "Real & Equal" if d==0 else "imaginary roots")
+
+9) WAP to check whether a given year is a leap year or not.
+
+Code:
+
+year=2001
+if year%400==0:
+    print("leap year")
+elif year%100==0:
+    print("leap year")
+elif year%4==0:
+    print("leap year")
+else:
+    print("not leap year")
+
+10) WAP to print greater among three numbers. Print number only once even if numbers are the same.
+
+Code:
+
+a,b,c=13,4,23
+if a>b:
+    print(a if a>c else c)
+else:
+    print(b if b>c else c)
+    
