@@ -1,0 +1,78 @@
+1) WAP to calculate sum of first n natural numbers.
+
+sum=0
+for i in range(1,int(input("Enter range:"))+1):
+    sum=sum+i
+print("sum is ",sum)
+
+2) WAP to calculate sum of squares of first N natural numbers.
+
+sum=0
+for i in range(1,int(input("Enter range:"))+1):
+    sum=sum+(i**2)
+print("Sum of squares: ",sum)
+
+3) WAP to calculate sum of cubes of first N natural numbers.
+
+sum=0
+for i in range(1,int(input("Enter range:"))+1):
+    sum=sum+(i**3)
+print("Sum of cubes: ",sum)
+
+4) WAP to calculate sum of first N odd natural numbers.
+
+oddSum=0
+for i in range(1,2*(int(input("Enter range:")))):
+    oddSum=oddSum + (i if i%2!=0 else 0)
+print("Sum of odd: ",oddSum)
+
+5) WAP to calculate sum of first N even natural numbers.
+
+evenSum=0
+for i in range(1,1+2*(int(input("Enter range:")))):
+    evenSum=evenSum + (i if i%2==0 else 0)
+print("Sum of even: ",evenSum)
+
+6) WAP to calculate factorial of a given number.
+
+fact=1
+for i in range(1,int(input("Enter a number:"))+1):
+    fact=fact*i
+print("Factorial is ",fact)
+
+7) WAP to count digits in a given number.
+
+count=0
+n=int(input("enter a number:"))
+while n>0:
+    count=count+1
+    n=n//10
+print(count," digits")
+
+8) WAP to calculate sum of digits of a given number.
+
+sum=0
+n=int(input("enter the number:"))
+while n>0:
+    dig=n%10
+    sum=sum+dig
+    n=n//10
+print("Sum is ",sum)
+
+9) WAP to print binary equivalent of a given decimal number. (don't use bin() )
+
+s=''
+n=int(input("enter a number:"))
+while n>0:
+    s=str(n%2)+s
+    n=n//2
+print(s)
+
+10) WAP to print octal equivalent of a given decimal number. (don't use oct() )
+
+s=''
+n=int(input("enter a number:"))
+while n>0:
+    s=str(n%8)+s
+    n=n//8
+print(s)
