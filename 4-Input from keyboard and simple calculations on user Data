@@ -1,0 +1,82 @@
+1) WAP to take your name as input from the user and then print it.
+
+Code:
+
+name=input("Enter your name:")
+print(name)
+
+2) WAP to take input two numbers from the user, then calculate their sum and display result.
+
+Code:
+
+a=int(input("Enter first number:"))
+b=int(input("Enter second number:"))
+sum=a+b
+print(sum)
+
+3) WAP which takes radius from the user and display area of the circle.
+
+Code:
+
+r=int(input("Enter radius:"))
+ar=3.14*r**2
+print(ar)
+
+4) WAP to calculate square of a number. Number is entered by the user.
+
+Code:
+
+n=int(input("Enter a number:"))
+sq=n**2
+print(sq)
+
+5) WAP which takes a character from the user and display its unicode.
+
+Code:
+ch=input("Enter a character:")
+print(ord(ch))
+
+6) WAP to calculate simple interest.
+
+Code:
+
+p=float(input("Enter principle amount:"))
+t=int(input("Enter time duration(no of years):"))
+r=float(input("Enter rate of interest per annum:"))
+si=(p*t*r)/100.0
+print("Simple Interest:",si)
+
+7) WAP to calculate Area of rectangle.
+
+Code:
+
+l,b=float(input("enter the length:")),float(input("Enter the bredth:"))
+area=l*b
+print("Area: ",area)
+
+8) WAP to calculate average of three numbers entered by user.
+
+Code:
+
+print("Enter three numbers:")
+x,y,z=int(input()),int(input()),int(input())
+avg=(x+y+z)/3
+print("Average:",avg)
+
+9) WAP to calculate volume of a cuboid.
+
+Code:
+
+l,b,h=float(input("Enter the length:")),float(input("Enter the bredth:")),float(input("Enter the height:"))
+vol=l*b*h
+print("Volume:",vol)
+
+10) WAP to take two numbers from user (say x and y), now calculate xy
+ and display the result.
+ 
+Code:
+
+print("Enter two numbers:")
+x,y=int(input()),int(input())
+res=x**y
+print("Result:",res)
