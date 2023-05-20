@@ -1,0 +1,73 @@
+1) WAP to remove the last digit from a given number.
+
+Code:
+
+n=int(input("Enter a number:"))
+n=int(n/10)
+print(n)
+
+2) WAP to get the last digit from a given number.
+
+Code:
+
+n=int(input("Enter a number:"))
+n=int(n%10)
+print(n)
+
+3) WAP to swap data of two variables.
+
+Code:
+
+print("Enter two numbers:")
+a,b=int(input()),int(input())
+a,b=b,a
+print("a=",a,"b=",b)
+
+4) WAP which takes a three digit number from the user and displays only it's first digit.
+
+Code:
+
+n=int(input("Enter a 3 dig number:"))
+print(int(int((n/10))/10))
+
+5) WAP which takes a three digit number from the user and displays only it's middle digit.
+
+Code:
+
+n=int(input("Enter a 3 dig number:"))
+print(int(int((n/10))%10))
+
+
+6) WAP to print True if the string 'my' is a member in a string entered by user.
+
+Code:
+
+st="my name is Faizan"
+print('my' in st)
+
+7) WAP to inout two string from the user and display whether the two variables referred 
+to the same object or not. Print True or False.
+
+Code:
+
+print("Enter two strings:")
+s1,s2=input(),input()
+print(s1 is s2)
+
+8) What will be output of the python expression 5>10<5 ? 
+
+Code:
+
+print(5>10<5)
+
+9) What will be the output of the python expression "Red" and "White" ? 
+
+Code:
+
+print("Red" and "White")
+
+10) What will be the output of the expression - True or False ?
+
+Code:
+
+print(True or False)
