@@ -1,0 +1,105 @@
+1) WAP to check if a given string has only alphabets in it.
+
+count=0
+s1=input("Enter a string: ")
+set="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+for i in s1:
+    if i not in set:
+        print("The string doesn't contains alphabet only.")
+        break
+    else:
+        count+=1
+if count==len(s1):
+    print("The string contains alphabet only.")
+    
+#better
+
+count=0
+s1=input("Enter a string: ")
+for i in s1:
+    if i in i>='a' and i<='z' or i>='A' and i<='Z':
+        pass
+    else:
+        print("String has atleast one character which is not an alphabet.")
+        break
+else:
+    print("String has alphabets only")
+
+
+2) WAP to check if a given character is present in a given string or not.
+
+string="facanonrawof"
+ch=input("Enter a character:")
+if ch in string:
+    print("Character is present in the given string.")
+else:
+    print("Character is'nt present in the given string.")
+
+3) WAP to count vowels in a given string.
+
+s=input("Enter a string:")
+count=0
+for i in s:
+    if i in "aeiouAEIOU":
+        count+=1
+print("no of vowels: ",count)
+
+4) WAP to count words in a given string.
+
+strings=input("Enter a string of words:").split(' ')
+print("Number of words: ",len(strings))
+
+5) WAP to reverse a string.
+
+strings=input("Enter a string:")
+rev=""
+for i in strings:
+    rev=i+rev
+print(rev)
+
+#better
+s5=input("Enter the string:")
+print(s5[::-1])
+
+6) WAP to reverse a string word wise (for example : "A wise old owl" is given string
+and resulting string should be "owl old wise A")
+
+s1=input("Enter a sentence:")
+ls=s1.split(' ')
+ls.reverse()
+s1=' '.join(ls)
+print(s1)
+
+#better
+s1=input("Enter a sentence:")
+print(' '.join(s1.split(' ')[::-1]))
+
+7) WAP to extract numbers from a given text and store all the numbers in a list
+
+s2=input("enter a string:")
+l=[]
+for i in s2:
+    if i.isdigit():
+        l.append(int(i))
+print("list: ",l,"\nString:",s2)
+
+8) WAP to check whether it is palindrome or not.
+
+s3=input("enter a sentence:")
+print("Palindrome" if s3==s3[::-1] else "Not palindrome") #better
+
+9) WAP to transform a given string to uppercase.
+
+s4=input("Enter a string:")
+s4=s4.upper()
+print(s4)
+
+10) WAP to find maximum length word in a given test.
+
+max=''
+s5=input("Enter a sentence:")
+lst=s5.split(' ')
+for i in lst:
+    if len(max)<len(i):
+        max=i
+print("Max length word is",max)
