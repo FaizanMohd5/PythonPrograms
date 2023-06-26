@@ -20,7 +20,7 @@ list_strings = ["app", "day", "goal", "win", "ape","dine","vine"]
 list_tuples = []
 
 for i in list_strings:
-    tup_l = []
+    tup_l.clear()
     for j in range(0,len(list_strings)):
         if i[0] == list_strings[j][0] :
             tup_l.append(list_strings[j])
