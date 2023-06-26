@@ -15,6 +15,27 @@ print(tuple(t2))
 each tuple is a collection of strings begin with the same character.
 Code:
 
+list_strings = ["app", "day", "goal", "win", "ape","dine","vine"]
+
+list_tuples = []
+
+for i in list_strings:
+    tup_l = []
+    for j in range(0,len(list_strings)):
+        if i[0] == list_strings[j][0] :
+            tup_l.append(list_strings[j])
+            
+    list_tuples.append(tuple(tup_l))
+
+unique_list =[]
+
+for i in list_tuples:
+    if i not in unique_list:
+        unique_list.append(i)
+    
+list_tuples = unique_list
+
+print(list_tuples)
 
 4) WAP to create list of tuples, where each tuple is a pair of 
 elements, first element is uppercase character and second element
