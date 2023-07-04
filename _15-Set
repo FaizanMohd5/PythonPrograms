@@ -1,1 +1,51 @@
+1) WAP to print all distinct elements of a list. Use set to solve the problem.
 
+Code:
+
+print(list(set(int(i) for i in input("Enter numbers(Space separated)").split(' '))))
+
+
+2) Create two sets from a given set of numbers to seperate even and odd numbers.
+
+Code:
+
+set_numbers = {3,4,6,3,7,4,5,8,0,3,1,5,7,5,8,9}
+
+set_odd, set_even = set(), set()
+
+{set_odd.add(i) if i%2==0 else set_even.add(i) for i in set_numbers}
+    
+print(set_odd,set_even,sep='\n')
+
+
+3) Given a set of five player names. Write a python script to form all possible
+pairs of players that is selecting two players at a time.
+
+Code:
+
+4) You have list of names of candidates, some of them are wearing black hat
+   some of them are wearing red shoes and some of them are wearing both. 
+   Now you have given a list of names of candidates wearing black hat.
+   There is another list of names of candidates wearing red shoes. 
+   Write a python script to find out thenames of the candidates wearing
+   black hat and red shoes.
+
+Code:
+
+red_shoes = ['Mr A','Mr G','Mr C','Mr E']
+
+black_hats = ['Mr A','Mr C','Mr F','Mr E','Mr G',]
+
+red_shoes_black_hats = set(set(red_shoes).intersection(black_hats))
+
+red_shoes_black_hats
+
+5) create a set of tuples, where each tuple has two elements representing dice
+ upper face number. Take a number N from the user and generate all possible 
+ tuples, in such a way that tuple elements sums to N
+
+Code:
+
+set_tuples = set()
+
+n = int(input("Enter the number of tuples:"))
