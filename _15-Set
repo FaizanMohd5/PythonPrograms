@@ -23,6 +23,16 @@ pairs of players that is selecting two players at a time.
 
 Code:
 
+players = {"Faizan","Yousuf","Suhaib","Mustafa","Maaz"}
+x=0
+for i in players:
+    x+=1
+    for j in list(players)[x::]:
+        print(i,j)
+ (OR)
+    import itertools as it
+    print(list(it.combinations(players,2)))
+
 4) You have list of names of candidates, some of them are wearing black hat
    some of them are wearing red shoes and some of them are wearing both. 
    Now you have given a list of names of candidates wearing black hat.
@@ -46,6 +56,10 @@ red_shoes_black_hats
 
 Code:
 
-set_tuples = set()
-
 n = int(input("Enter the number of tuples:"))
+set_tuples = set()
+for i in range(1,7):
+    for j in range(1,7):
+        if i+j==n:
+            set_tuples.add((i,j))
+print(set_tuples)
