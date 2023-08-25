@@ -1,0 +1,184 @@
+1) Sum of two numbers
+
+Code:
+
+def cal_sum(a,b):
+    return a+b
+
+a,b = int(input("Enter two numbers:\n")),int(input())
+
+print("Sum of",a,"and",b,'is',cal_sum(a,b))
+
+2) function to calculate area of circle
+
+Code:
+
+def cal_area(radius):
+    return 3.14*radius*radius
+
+radius = float(input("Enter the radius: "))
+print("Area is",cal_area(radius))
+
+3) function to calculate average of three numbers
+
+Code:
+
+def cal_sum(a=0,b=0,c=0):
+    return a+b+c
+
+a, b, c = int(input("Enter three numbers:\n")),int(input()),int(input())
+
+print("Sum of three numbers:",cal_sum(a,b,c))
+
+4) function to calc compound interest
+
+Code:
+
+def cal_ci(principle,time=1,roi=12.0,n=1):
+    return principle*(1+roi/100)*time - priciple
+
+print("Enter priciple amount, time, roi:\n")
+p, t, r = float(input()),int(input()),float(input())
+print("Compound Interest: ",cal_ci(p,t,r))
+
+5) Vol of cuboid
+
+Code:
+
+def cal_vol(l,b,h):
+    return l*b*h
+
+print("Enter length, breadth and height:\n")
+l, b, h = input(),input(),input()
+
+print("Volume of cuboid is"cal_vol(l,b,h))
+
+6) Check if number is even
+Code:
+
+def check_even(number):
+    return True if number%2==0 else False
+
+if check_even(int(input("Enter a number:"))):
+    print("Even")
+
+7) find greater among three nums
+def find_max(a=0,b=0,c=0):
+    return a if a>b and a>c else b if b>a and b>c else c
+
+find_max(4,6)
+
+8) check prime
+Code:
+
+def check_prime(number):
+    for i in range(2,(number//2)+1):
+        if number%i==0:
+            return False
+    return True
+
+if check_prime(int(input("Enter number: "))):
+    print("Prime")
+else:
+    print("Not Prime")
+
+9) check if year is leap year
+Code:
+
+def check_leap(year):
+    return True if year%4==0 and year%100!=0 or year%400==0 else False
+
+year = int(input("Enter a year: "))
+
+print("Leap year" if check_leap(year) else "Not a leap year")
+
+10)  Cal factorial
+
+Code:
+
+def fact(number):
+    f=1
+    for i in range(1,number+1):
+        f=f*i
+    return f
+
+fact(5)
+
+11) first N odd nat nums
+code:
+
+def print_odd(n):
+    for i in range(1,2*n,2):
+        print(i,end=' ')
+        
+print("First 20 odd natural numbers:")
+print_odd(20)
+
+12) first N primes
+
+Code:
+
+def print_prime(n):
+    count=0
+    for i in range(2,n*n):
+        for j in range(2,i//2+1):
+            if i%j==0:
+                break
+        else:
+            count+=1
+            if count <= n:
+                print(i,end=' ')
+              
+print("First 30 primes: ")
+print_prime(30)
+
+13) primes between two numbers
+Code:
+
+def print_prime(a,b):
+    for i in range(a,b):
+        for j in range(2,i//2+1):
+            if i%j==0:
+                break
+        else:
+            print(i,end=' ')
+            
+print("Primes between 4 and 80 :")
+print_prime(4,80)
+
+14) first N fibonacci
+Code:
+
+def fibonacci(n):
+    a, b, c = 0, 1, 0
+    for i in range(n):
+        print(c,end=' ')
+        a=b
+        b=c
+        c=a+b
+        
+fibonacci(20)
+
+15) all factors of a number
+
+Code:
+def factors(n):
+    for i in range(1,n+1):
+        if(n%i==0):
+            print(i,end=' ')
+            
+factors(12)
+
+16) function : lcm of two numbers
+
+Code:
+def lcm(a,b):
+    for i in range(a if a>b else b,a*b+1,a if a>b else b):
+        if(i%a==0 and i%b==0):
+            break
+    return i
+
+a,b = int(input("Enter two numbers:\n")), int(input())
+lcm(a,b)
+
+17)  
